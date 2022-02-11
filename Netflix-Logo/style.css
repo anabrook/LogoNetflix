@@ -1,0 +1,65 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c5c5c5;
+  height: 100vh;
+}
+
+#net{ 
+  background:red;
+  height: 250px;
+  width: 60px;
+  position: relative;
+
+}
+
+#net::before{
+  background: red;
+  height: 250px;
+  width: 60px;
+  position: absolute;
+  content: '';
+  left: 90px;
+}
+
+#net::after{
+  background: #c5c5c5;
+  height: 20px;
+  width: 175px;
+  position: absolute;
+  content: '';
+  left: -15px;
+  bottom: -10px;
+  border-radius: 50%;
+}
+
+#flix{
+  position: absolute;
+  height: 250px;
+  width: 60px;
+  background-color: red;
+  left: 46px;
+  transform: skew(20deg);
+  box-shadow: 0 0 10px -4px;
+
+}
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: red red;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 50px;
+}
